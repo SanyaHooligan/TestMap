@@ -1,0 +1,106 @@
+﻿<Window x:Class="TestMapApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestMapApplication"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1000">
+    <Grid>
+        <Canvas x:Name="MainCanvas">
+            <Polyline x:Name="polyline" Stroke="DarkGreen" StrokeThickness="3"/>
+            <Polyline Stroke="DarkRed" StrokeThickness="5" Points="0,100,200,0,400,100" Canvas.Left="239" Canvas.Top="100"></Polyline>
+            <Polyline Stroke="DarkRed" StrokeThickness="5" Points="0,0,80,50" Canvas.Left="245" Canvas.Top="212"></Polyline>
+            <Polyline Stroke="DarkRed" StrokeThickness="5" Points="0,80,120,20" Canvas.Left="331" Canvas.Top="175"></Polyline>
+            <Polyline Stroke="DarkRed" StrokeThickness="5" Points="0,0,80,50" Canvas.Left="459" Canvas.Top="315"></Polyline>
+            <Ellipse x:Name="First" Tag="1,6,4" Width="40" Height="40" Canvas.Left="500" Canvas.Top="50" Canvas.ZIndex="2">
+                <Ellipse.Fill>
+                    <RadialGradientBrush Center="0.5,0.5">
+                        <GradientStop Offset="0" Color="White"/>
+                        <GradientStop Offset="0.9" Color="#FFFFF86C"/>
+                        <GradientStop Offset="1" Color="Orange"/>
+                    </RadialGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Ellipse x:Name="Second" Tag="2,3,7" Width="40" Height="40" Canvas.Left="420" Canvas.Top="130" Canvas.ZIndex="2">
+                <Ellipse.Fill>
+                    <RadialGradientBrush Center="0.5,0.5">
+                        <GradientStop Offset="0" Color="White"/>
+                        <GradientStop Offset="0.9" Color="#FFFFF86C"/>
+                        <GradientStop Offset="1" Color="Orange"/>
+                    </RadialGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Ellipse x:Name="Third" Tag="3,5,2,4" Width="40" Height="40" Canvas.Left="600" Canvas.Top="250" Canvas.ZIndex="2">
+                <Ellipse.Fill>
+                    <RadialGradientBrush Center="0.5,0.5">
+                        <GradientStop Offset="0" Color="White"/>
+                        <GradientStop Offset="0.9" Color="#FFFFF86C"/>
+                        <GradientStop Offset="1" Color="Orange"/>
+                    </RadialGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Ellipse x:Name="Fourth" Tag="4,3,1" Width="40" Height="40" Canvas.Left="750" Canvas.Top="150" Canvas.ZIndex="2">
+                <Ellipse.Fill>
+                    <RadialGradientBrush Center="0.5,0.5">
+                        <GradientStop Offset="0" Color="White"/>
+                        <GradientStop Offset="0.9" Color="#FFFFF86C"/>
+                        <GradientStop Offset="1" Color="Orange"/>
+                    </RadialGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Ellipse x:Name="Fifth" Tag="5,6,3,8" Width="40" Height="40" Canvas.Left="200" Canvas.Top="300" Canvas.ZIndex="2">
+                <Ellipse.Fill>
+                    <RadialGradientBrush Center="0.5,0.5">
+                        <GradientStop Offset="0" Color="White"/>
+                        <GradientStop Offset="0.9" Color="#FFFFF86C"/>
+                        <GradientStop Offset="1" Color="Orange"/>
+                    </RadialGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Ellipse x:Name="Sixth" Tag="6,1,5" Width="40" Height="40" Canvas.Left="180" Canvas.Top="70" Canvas.ZIndex="2">
+                <Ellipse.Fill>
+                    <RadialGradientBrush Center="0.5,0.5">
+                        <GradientStop Offset="0" Color="White"/>
+                        <GradientStop Offset="0.9" Color="#FFFFF86C"/>
+                        <GradientStop Offset="1" Color="Orange"/>
+                    </RadialGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Ellipse x:Name="Seventh" Tag="7,2" Width="40" Height="40" Canvas.Left="326" Canvas.Top="175" Canvas.ZIndex="2">
+                <Ellipse.Fill>
+                    <RadialGradientBrush Center="0.5,0.5">
+                        <GradientStop Offset="0" Color="White"/>
+                        <GradientStop Offset="0.9" Color="#FFFFF86C"/>
+                        <GradientStop Offset="1" Color="Orange"/>
+                    </RadialGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Ellipse x:Name="Eighth" Tag="8,5" Width="40" Height="40" Canvas.Left="412" Canvas.Top="356" Canvas.ZIndex="2">
+                <Ellipse.Fill>
+                    <RadialGradientBrush Center="0.5,0.5">
+                        <GradientStop Offset="0" Color="White"/>
+                        <GradientStop Offset="0.9" Color="#FFFFF86C"/>
+                        <GradientStop Offset="1" Color="Orange"/>
+                    </RadialGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Grid Canvas.Bottom="100" Height="50" Width="{Binding ElementName=MainCanvas, Path=ActualWidth}">
+                <Grid HorizontalAlignment="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox Height="30" Width="200" x:Name="SearchField"></TextBox>
+                    <Button Grid.Column="1" Height="40" Width="100" Background="LightSalmon" Click="Button_Click" Foreground="White" FontSize="18">Click me</Button>
+                </Grid>
+            </Grid>
+            <!--<Grid Canvas.Bottom="100" Width="{Binding ElementName=MainCanvas, Path=ActualWidth}">
+                <StackPanel>
+                    <Button Height="40" Width="100" Background="LightSalmon" Click="Button_Click_1" Foreground="White" FontSize="18">Shorter line</Button>
+                    <Button Height="40" Width="120" Background="LightSalmon" Click="Button_Click_2" Foreground="White" FontSize="18">Shorter line 1</Button>
+                </StackPanel>
+            </Grid>-->
+        </Canvas>
+    </Grid>
+</Window>

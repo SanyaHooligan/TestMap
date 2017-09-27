@@ -1,0 +1,17 @@
+c:\users\hooligan\documents\visual studio 2015\Projects\TestMapApplication\TestMapApplication\bin\Debug\TestMapApplication.exe.config
+c:\users\hooligan\documents\visual studio 2015\Projects\TestMapApplication\TestMapApplication\bin\Debug\TestMapApplication.exe
+c:\users\hooligan\documents\visual studio 2015\Projects\TestMapApplication\TestMapApplication\bin\Debug\TestMapApplication.pdb
+c:\users\hooligan\documents\visual studio 2015\Projects\TestMapApplication\TestMapApplication\obj\Debug\TestMapApplication.csprojResolveAssemblyReference.cache
+c:\users\hooligan\documents\visual studio 2015\Projects\TestMapApplication\TestMapApplication\obj\Debug\MainWindow.g.cs
+c:\users\hooligan\documents\visual studio 2015\Projects\TestMapApplication\TestMapApplication\obj\Debug\App.g.cs
+c:\users\hooligan\documents\visual studio 2015\Projects\TestMapApplication\TestMapApplication\obj\Debug\TestMapApplication_MarkupCompile.cache
+c:\users\hooligan\documents\visual studio 2015\Projects\TestMapApplication\TestMapApplication\obj\Debug\TestMapApplication_MarkupCompile.lref
+c:\users\hooligan\documents\visual studio 2015\Projects\TestMapApplication\TestMapApplication\obj\Debug\MainWindow.baml
+c:\users\hooligan\documents\visual studio 2015\Projects\TestMapApplication\TestMapApplication\obj\Debug\TestMapApplication.g.resources
+c:\users\hooligan\documents\visual studio 2015\Projects\TestMapApplication\TestMapApplication\obj\Debug\TestMapApplication.Properties.Resources.resources
+c:\users\hooligan\documents\visual studio 2015\Projects\TestMapApplication\TestMapApplication\obj\Debug\TestMapApplication.csproj.GenerateResource.Cache
+c:\users\hooligan\documents\visual studio 2015\Projects\TestMapApplication\TestMapApplication\obj\Debug\TestMapApplication.exe
+c:\users\hooligan\documents\visual studio 2015\Projects\TestMapApplication\TestMapApplication\obj\Debug\TestMapApplication.pdb
+C:\Users\HOOLIGAN\Source\Repos\TestMap\TestMapApplication\bin\Debug\TestMapApplication.exe.config
+C:\Users\HOOLIGAN\Source\Repos\TestMap\TestMapApplication\obj\Debug\TestMapApplication.exe
+C:\Users\HOOLIGAN\Source\Repos\TestMap\TestMapApplication\obj\Debug\TestMapApplication.pdb
